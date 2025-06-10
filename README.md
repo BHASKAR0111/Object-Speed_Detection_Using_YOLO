@@ -1,49 +1,68 @@
-# Object-Speed_Detection_Using_YOLO
+**Object and Speed Detection using YOLO**
 
-Object and Speed Detection using YOLO
-This project implements real-time object detection and speed estimation using the YOLO algorithm. It detects and tracks objects in video feeds and estimates their speed based on movement between frames.
+This project implements real-time object detection and speed estimation using the YOLO (You Only Look Once) deep learning model. It can track and detect objects in video feeds, while also estimating their speed based on displacement across frames.
 
 Features
-Real-time Object Detection using YOLoV8
+Real-time Object Detection using YOLOv5/YOLoV8
 
-Speed Estimation based on object displacement
+Speed Estimation for moving objects
 
-Multiple Object Tracking in videos
+Multiple Object Tracking
 
-Supports video files and live camera feed
+Customizable for video files and live camera feeds
 
-Annotated video output with object labels and speed
+Annotated Output with object labels and speed
 
 Installation
-Clone the repository:
-git clone https://github.com/yourusername/object-speed-detection-yolo.git
-cd object-speed-detection-yolo
+Pre-requisites
+Python 3.7+
+PyTorch
+OpenCV
+NumPy
 
+Other dependencies in requirements.txt
+
+Setup
+
+Clone the repository:
+git clone https://github.com/BHASKAR0111/Object-Speed_Detection_Using_YOLO.git
+cd Object-Speed_Detection_Using_YOLO
 Install dependencies:
+
 pip install -r requirements.txt
 Download YOLOv5 weights (e.g., yolov5s.pt).
 
 Usage
-Run the script with a video or live camera feed:
+Run the detection script for a video or live feed:
 
-bash
+
 python detect_speed.py --source video.mp4 --yolo_model yolov5s.pt
+Arguments:
+
 --source: Path to video file or webcam (0 for live feed).
 
---yolo_model: Path to YOLO model weights.
+--yolo_model: Path to YOLOv5 model weights.
 
 Example Output
-The output video will show:
+Once you run the script, the video will be annotated with:
 
 Bounding boxes around objects
 
-Labels (e.g., "car", "person")
+Labels (e.g., "car", "Van")
 
-Speed estimates (in km/h or m/s)
+Speed estimates in km/h or m/s
+
+Example:
+The output will look like this:
 
 Contributing
-Feel free to fork, open issues, and submit pull requests!
+Feel free to contribute to the project! You can:
+
+Fork the repository
+
+Open issues for any bugs or feature requests
+
+Submit pull requests for improvements
 
 License
 MIT License
-
