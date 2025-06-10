@@ -3,7 +3,7 @@
 This project implements real-time object detection and speed estimation using the YOLO (You Only Look Once) deep learning model. It can track and detect objects in video feeds, while also estimating their speed based on displacement across frames.
 
 Features
-Real-time Object Detection using YOLOv5/YOLoV8
+Real-time Object Detection using YOLoV8
 
 Speed Estimation for moving objects
 
