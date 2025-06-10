@@ -67,5 +67,5 @@ Submit pull requests for improvements
 License
 MIT License
 
-![Speed Detection](output_sample.png)
+![Speed Detection](Output_Sample.png)
 
